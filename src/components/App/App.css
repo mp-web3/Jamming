@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #FDA707;
+  --tertiary-color: #C2C5FF;
+  --secondary-color: #d2d4ffc6;
+  --fourth-color: #EBECFF;
+  --text-color: #000000;
+  --border-color: #00000044;
+  --border-def: 1px solid var(--border-color);
+  --gap: 1rem;
+  --padding: 1rem;
+  --margin: 1rem;
+  --card-border-radius: 0.25rem;
+  --box-shadow-light: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  --button-border-radius: 1rem;
+  --family: 'Raleway', sans-serif;
+  --p-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+  font-family: var(--family)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--fourth-color);
+  font-size: var(--p-size);
+}
+
+input {
+  padding: 10px;
+  line-height: 0;
+  border: none;
+  border-radius: var(--card-border-radius);
+  margin-bottom: var(--margin);
+  margin-top: calc(var(--margin)*3);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+
+}
+
+.App-playlist {
+  display: flex;
+  align-items:flex-start;
+  width: 80%;
+  margin-top: calc(var(--margin)*3);
+  padding: 0;
+  gap: calc(var(--gap)*3);
+}
+
+.SearchResults, .Playlist {
+  border: var(--border-def);
+  min-height: 50vh;
+  width: 50%;
+  padding: var(--padding) calc(var(--padding)*2);
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow-light);
+}
+
+
+@media(max-width:768px) {
+  .App-playlist {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
+
