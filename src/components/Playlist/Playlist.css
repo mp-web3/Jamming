@@ -7,3 +7,18 @@
     margin-top: 0;
     margin-right: calc(var(--margin)*3);
 }
+
+@media(max-width:768px) {
+    .PlaylistNameButton-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--padding);
+        margin-bottom: var(--margin);
+    }
+
+    .Playlist input {
+        margin: 0;
+    }
+}

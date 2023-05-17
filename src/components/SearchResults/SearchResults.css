@@ -1,5 +1,6 @@
 h2 {
     margin-bottom: var(--padding);
+    text-align: center;
 }
 
 .TrackList {

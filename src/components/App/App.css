@@ -72,6 +72,16 @@ input {
 @media(max-width:768px) {
   .App-playlist {
     flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .SearchResults, .Playlist {
+    width: 80%;
+    min-height: 150px;
   }
 
 }
