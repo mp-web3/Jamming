@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './SearchBar.css';
-/* import Button from '../Button'; */
+import Button from '../Button';
 
 
 function SearchBar(props) {
@@ -27,7 +27,10 @@ function SearchBar(props) {
       onChange={handleTermChange}
       onKeyDown={handleKeyDown}
       />
-      <button className='SearchButton' onClick={search}>Search</button>
+      <Button 
+      onClick={search}
+      text='Search'
+      />
     </div>
   )
 
